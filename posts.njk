@@ -1,0 +1,12 @@
+---
+title: All Blog Articles
+layout: layout.njk
+---
+
+In the future you will find some posts here.
+
+<ul>
+	{% for post in posts %}
+	<li><a href={{ "/posts/" + post.slug + ".html" }}>{{ post.title }}</a></li>
+	{% endfor %}
+</ul>

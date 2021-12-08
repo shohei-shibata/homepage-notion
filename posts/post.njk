@@ -1,0 +1,13 @@
+---
+layout: layout.njk
+pagination:
+  data: posts
+  size: 1
+  alias: post
+title: Blog Article
+permalink: posts/{{ post.slug }}.html
+---
+
+<h1>{{ post.title }}</h1>
+
+The URL for this page is "posts/{{ post.slug }}"
